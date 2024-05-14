@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Compare - Convert your currency</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="html" href="/about.html">
+
+</head>
+
+<body>
+    <nav>
+        <header>
+            <a href="./" class="logo">
+                <img src="logo.jpg" alt="Company Logo">
+            </a>
+        </header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact-form.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form id="conversion-form">
+            <label for="quantity">Choose a quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="9999999999">
+
+
+            <label for="currency">Choose a currency: </label>
+            <select id="currency" name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">British Pound</option>
+                <option value="AUD">AUS Dollar</option>
+            </select>
+
+            <button class="convert-button" type="submit">
+                <span class="button-text">Convert</span>
+                <span class="button-spinner"></span>
+            </button>
+
+        </form>
+        <div class="output">
+            <h2>Here is your converted values in different currencies</h2>
+            <table id="output-table">
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
